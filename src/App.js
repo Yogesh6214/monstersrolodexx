@@ -6,45 +6,41 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      String: "Hi, Yogesh",
+      monster: [
+        {
+          name: "Pichani",
+          id: "mons1",
+        },
+        {
+          name: "Chudail",
+          id: "mons2",
+        },
+        {
+          name: "Dakani",
+          id: "mons3",
+        },
+        {
+          name: "Bharmrakshash",
+          id: "mons4",
+        },
+        {
+          name: "Jin",
+          id: "mons5",
+        },
+        {
+          name: "Bhoot",
+          id: "mons6",
+        },
+      ],
     };
   }
   
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Monsters Rolodex</p>
-          <a
-            className="App-link"
-            href="https://monstaersrolodex.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Monsters Rolodex App
-          </a>
-          <p>{this.state.String}</p>
-          <button
-            style={{
-              backgroundColor: "#61dafb",
-              border: "none",
-              color: "white",
-              padding: "5px 15px",
-              textAlign: "center",
-              textDecoration: "none",
-              display: "inline-block",
-              fontSize: "16px",
-              margin: "4px 2px",
-              cursor: "pointer",
-            }}
-            onClick={() =>
-              this.setState({ String: "Welcome to Monsters Rolodex App" })
-            }
-          >
-            Click Me
-          </button>
-        </header>
+        {this.state.monster.map((monsters) => (
+          <h1 key={monsters.id}>{monsters.name}</h1>
+        ))}
       </div>
     );
   }
