@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/monstersrolodexx/static/css/main.c035fc98.css",
+    "main.js": "/monstersrolodexx/static/js/main.9d6f79dd.js",
+    "static/js/453.117e64df.chunk.js": "/monstersrolodexx/static/js/453.117e64df.chunk.js",
+    "index.html": "/monstersrolodexx/index.html",
+    "main.c035fc98.css.map": "/monstersrolodexx/static/css/main.c035fc98.css.map",
+    "main.9d6f79dd.js.map": "/monstersrolodexx/static/js/main.9d6f79dd.js.map",
+    "453.117e64df.chunk.js.map": "/monstersrolodexx/static/js/453.117e64df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c035fc98.css",
+    "static/js/main.9d6f79dd.js"
+  ]
+}
